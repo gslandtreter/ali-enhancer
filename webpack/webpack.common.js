@@ -5,8 +5,6 @@ const srcDir = path.join(__dirname, "..", "src");
 
 module.exports = {
     entry: {
-      popup: path.join(srcDir, 'popup.tsx'),
-      options: path.join(srcDir, 'options.tsx'),
       req_interceptor: path.join(srcDir, 'req_interceptor.ts'),
       content_script: path.join(srcDir, 'content_script.tsx'),
       injected_finder: path.join(srcDir, 'injected_finder.ts'),

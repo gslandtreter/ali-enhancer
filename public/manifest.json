@@ -5,18 +5,15 @@
   "description": "Melhora a usabilidade do Sistema ALI",
   "version": "1.0",
 
-  "options_ui": {
-    "page": "options.html"
-  },
-
-  "action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   },
 
   "content_scripts": [
       {
-          "matches": ["<all_urls>"],
+          "matches": ["*://*.sebrae.com.br/*"],
           "js": ["js/content_script.js"]
       }
   ],
@@ -33,7 +30,7 @@
   "web_accessible_resources": [
     {
       "resources": ["newtab.svg"],
-      "matches": ["<all_urls>"]
+      "matches": ["*://*.sebrae.com.br/*"]
     }
   ],
 
